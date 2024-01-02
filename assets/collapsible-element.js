@@ -1,7 +1,12 @@
 class CollapsibleElement extends HTMLElement {
   constructor() {
     super();
-    console.log('CollapsibleElement constructor');
+
+    if (relapse)
+      relapse(this, {
+        persist: false,
+        multiple: false,
+      });
   }
 }
 

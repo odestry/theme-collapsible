@@ -26,7 +26,7 @@
       {% endif %}
     </div>
     {% if section.blocks.size > 0 %}
-      <collapsible-elemen class="flex flex-col col-span-1 list-none" role="list">
+      <collapsible-element class="flex flex-col col-span-1 list-none" role="list">
         {% for block in section.blocks %}
           {% if block.settings.heading != blank %}
             {% assign content = null %}
@@ -39,7 +39,7 @@
             {% render 'collapsible', title: block.settings.heading, content: content %}
           {% endif %}
         {% endfor %}
-      </collapsible-elemen>
+      </collapsible-element>
     {% endif %}
   </div>
 </section>

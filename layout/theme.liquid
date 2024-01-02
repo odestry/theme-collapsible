@@ -21,6 +21,8 @@
     {{ 'styles.css' | asset_url | stylesheet_tag }}
 
     {{ content_for_header }}
+
+    <script type="module" src="{{ 'lib.js' | asset_url }}" defer="defer"></script>
   </head>
   <body class="grid min-h-svh">
     <header class="sticky top-0 container mx-auto px-4 flex justify-between items-center py-2 lg:py-4">
