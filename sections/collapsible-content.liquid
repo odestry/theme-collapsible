@@ -29,14 +29,29 @@
       <collapsible-element class="flex flex-col col-span-1 list-none" role="list">
         {% for block in section.blocks %}
           {% if block.settings.heading != blank %}
-            {% assign content = null %}
-            {% capture content %}
-            <div class="prose">
-              {{ block.settings.content }}
-            </div>
-          {% endcapture %}
-
-            {% render 'collapsible', title: block.settings.heading, content: content %}
+            <details
+              class="cursor-pointer border-b w-full"
+              {{ block.shopify_attributes }}>
+              <summary class="flex flex-1 items-center justify-between py-5 text-lg font-sans font-semibold transition-transform [details[open]_&>svg]:rotate-180 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/50 focus-visible:ring-offset-2">
+                {{ block.settings.heading }}
+                <svg
+                  class="size-5 transition-transform text-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2">
+                  <path d="m6 9 6 6 6-6"/>
+                </svg>
+              </summary>
+              {% if block.settings.content != blank %}
+                <div class="pb-4 prose" role="region">
+                  {{ block.settings.content }}
+                </div>
+              {% endif %}
+            </details>
           {% endif %}
         {% endfor %}
       </collapsible-element>
@@ -52,6 +67,7 @@
       "type": "checkbox",
       "id": "enhance",
       "label": "Enable progressive enhancement",
+      "info": "This will animate the opening and closing of the details element.",
       "default": true
     },
     {
