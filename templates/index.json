@@ -1,7 +1,75 @@
 {
   "sections": {
     "main": {
-      "type": "collapsible-content"
+      "type": "collapsible-content",
+      "blocks": {
+        "73ae5f3f-9a95-46cb-9174-21249d47be26": {
+          "type": "collapsible",
+          "settings": {
+            "heading": "Collapsible heading",
+            "content": "<p>Talk about the informations that are related to the heading.<\/p>"
+          }
+        },
+        "e8f0cb97-0efa-4eed-ab7a-450cd7619af8": {
+          "type": "collapsible",
+          "settings": {
+            "heading": "Collapsible heading",
+            "content": "<p>Talk about the informations that are related to the heading.<\/p>"
+          }
+        },
+        "3b8a4da9-ab20-4b58-8d7f-52211e5cfecf": {
+          "type": "collapsible",
+          "settings": {
+            "heading": "Collapsible heading",
+            "content": "<p>Talk about the informations that are related to the heading.<\/p>"
+          }
+        },
+        "ef381493-cac1-43ac-aed9-bb9699e9a81a": {
+          "type": "collapsible",
+          "settings": {
+            "heading": "Collapsible heading",
+            "content": "<p>Talk about the informations that are related to the heading.<\/p>"
+          }
+        },
+        "6c3880b9-b171-4ac3-bf42-7131489b5332": {
+          "type": "collapsible",
+          "settings": {
+            "heading": "Collapsible heading",
+            "content": "<p>Talk about the informations that are related to the heading.<\/p>"
+          }
+        },
+        "88226ed3-f711-4698-8f84-54ca5a2e8579": {
+          "type": "collapsible",
+          "settings": {
+            "heading": "Collapsible heading",
+            "content": "<p>Talk about the informations that are related to the heading.<\/p>"
+          }
+        },
+        "a1ce3ea0-dcf3-4e85-aa3a-31ac2ee4baa6": {
+          "type": "collapsible",
+          "settings": {
+            "heading": "Collapsible heading",
+            "content": "<p>Talk about the informations that are related to the heading.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "73ae5f3f-9a95-46cb-9174-21249d47be26",
+        "e8f0cb97-0efa-4eed-ab7a-450cd7619af8",
+        "3b8a4da9-ab20-4b58-8d7f-52211e5cfecf",
+        "ef381493-cac1-43ac-aed9-bb9699e9a81a",
+        "6c3880b9-b171-4ac3-bf42-7131489b5332",
+        "88226ed3-f711-4698-8f84-54ca5a2e8579",
+        "a1ce3ea0-dcf3-4e85-aa3a-31ac2ee4baa6"
+      ],
+      "settings": {
+        "enhance": true,
+        "heading": "Our questions and answers",
+        "text": "This an example of a collapsible content section. You can add as many collapsible content as you want.",
+        "button_label": "Help Center",
+        "button_link": "",
+        "spacing": 16
+      }
     }
   },
   "order": [
