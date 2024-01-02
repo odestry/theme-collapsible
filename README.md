@@ -1,4 +1,6 @@
-# theme-name
+# theme-collapsible
+
+[![License](https://img.shields.io/github/license/odestry/theme-starter?style=flat&colorA=338fbb&colorB=1c1c1c&logoColor=ffffff)]
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&colorA=338fbb&colorB=1c1c1c&logoColor=ffffff)](https://github.com/odestry/.github/blob/main/CONTRIBUTING.md)
 [![CI](https://img.shields.io/github/actions/workflow/status/odestry/theme-starter/ci.yml?style=flat&label=CI&colorA=338fbb&colorB=1c1c1c&logoColor=ffffff)](https://github.com/odestry/theme-starter/blob/main/.github/workflows/ci.yml)
