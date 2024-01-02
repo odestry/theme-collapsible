@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-section"
+      "type": "collapsible-content"
     }
   },
   "order": [
