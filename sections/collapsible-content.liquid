@@ -1,3 +1,7 @@
+{% if section.settings.enhance %}
+  <script src="{{ 'collapsible-element.js' | asset_url }}" defer="defer"></script>
+{% endif %}
+
 <section
   class="grid items-center py-[--spacing]"
   style="--spacing: {{ section.settings.spacing }}px">
@@ -22,23 +26,20 @@
       {% endif %}
     </div>
     {% if section.blocks.size > 0 %}
-      <ul class="flex flex-col col-span-1 list-none" role="list">
+      <collapsible-elemen class="flex flex-col col-span-1 list-none" role="list">
         {% for block in section.blocks %}
-          {% liquid
-            assign content = null
-          %}
-          <li class="w-full">
-            {% if block.settings.content != blank %}
-              {% capture content %}
-              <div class="rte">
-                {{ block.settings.content }}
-              </div>
-              {% endcapture %}
-            {% endif %}
+          {% if block.settings.heading != blank %}
+            {% assign content = null %}
+            {% capture content %}
+            <div class="prose">
+              {{ block.settings.content }}
+            </div>
+          {% endcapture %}
+
             {% render 'collapsible', title: block.settings.heading, content: content %}
-          </li>
+          {% endif %}
         {% endfor %}
-      </ul>
+      </collapsible-elemen>
     {% endif %}
   </div>
 </section>
@@ -48,9 +49,10 @@
   "name": "Collapsible content",
   "settings": [
     {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image"
+      "type": "checkbox",
+      "id": "enhance",
+      "label": "Enable progressive enhancement",
+      "default": true
     },
     {
       "type": "text",
